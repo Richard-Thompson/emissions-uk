@@ -20,6 +20,8 @@ const SearchPage = ({cities, fetchCityCallback, cityList, notification, onClick}
         if (!selected.value) return;
         event.target.blur();
         await fetchCityCallback(selected.value);
+        document.activeElement.blur();
+        
     }
 
     return (
