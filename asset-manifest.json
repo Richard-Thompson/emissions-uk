@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/repository-name/static/css/main.f4d50392.chunk.css",
-    "main.js": "/repository-name/static/js/main.12247ffa.chunk.js",
-    "main.js.map": "/repository-name/static/js/main.12247ffa.chunk.js.map",
-    "runtime~main.js": "/repository-name/static/js/runtime~main.ec2d8c2a.js",
-    "runtime~main.js.map": "/repository-name/static/js/runtime~main.ec2d8c2a.js.map",
-    "static/js/2.fce0781b.chunk.js": "/repository-name/static/js/2.fce0781b.chunk.js",
-    "static/js/2.fce0781b.chunk.js.map": "/repository-name/static/js/2.fce0781b.chunk.js.map",
-    "static/js/3.7b49590b.chunk.js": "/repository-name/static/js/3.7b49590b.chunk.js",
-    "static/js/3.7b49590b.chunk.js.map": "/repository-name/static/js/3.7b49590b.chunk.js.map",
-    "static/css/4.591c1e9b.chunk.css": "/repository-name/static/css/4.591c1e9b.chunk.css",
-    "static/js/4.bcddfd9e.chunk.js": "/repository-name/static/js/4.bcddfd9e.chunk.js",
-    "static/js/4.bcddfd9e.chunk.js.map": "/repository-name/static/js/4.bcddfd9e.chunk.js.map",
-    "index.html": "/repository-name/index.html",
-    "precache-manifest.754208f2912887583988417be9ddb0f2.js": "/repository-name/precache-manifest.754208f2912887583988417be9ddb0f2.js",
-    "service-worker.js": "/repository-name/service-worker.js",
-    "static/css/4.591c1e9b.chunk.css.map": "/repository-name/static/css/4.591c1e9b.chunk.css.map",
-    "static/css/main.f4d50392.chunk.css.map": "/repository-name/static/css/main.f4d50392.chunk.css.map"
+    "main.css": "/emissions-uk/static/css/main.f4d50392.chunk.css",
+    "main.js": "/emissions-uk/static/js/main.d4b25acb.chunk.js",
+    "main.js.map": "/emissions-uk/static/js/main.d4b25acb.chunk.js.map",
+    "runtime~main.js": "/emissions-uk/static/js/runtime~main.414d8614.js",
+    "runtime~main.js.map": "/emissions-uk/static/js/runtime~main.414d8614.js.map",
+    "static/js/2.fce0781b.chunk.js": "/emissions-uk/static/js/2.fce0781b.chunk.js",
+    "static/js/2.fce0781b.chunk.js.map": "/emissions-uk/static/js/2.fce0781b.chunk.js.map",
+    "static/js/3.7b49590b.chunk.js": "/emissions-uk/static/js/3.7b49590b.chunk.js",
+    "static/js/3.7b49590b.chunk.js.map": "/emissions-uk/static/js/3.7b49590b.chunk.js.map",
+    "static/css/4.591c1e9b.chunk.css": "/emissions-uk/static/css/4.591c1e9b.chunk.css",
+    "static/js/4.bcddfd9e.chunk.js": "/emissions-uk/static/js/4.bcddfd9e.chunk.js",
+    "static/js/4.bcddfd9e.chunk.js.map": "/emissions-uk/static/js/4.bcddfd9e.chunk.js.map",
+    "index.html": "/emissions-uk/index.html",
+    "precache-manifest.0d4c50aa89f69170f63ec3c3d965cd0a.js": "/emissions-uk/precache-manifest.0d4c50aa89f69170f63ec3c3d965cd0a.js",
+    "service-worker.js": "/emissions-uk/service-worker.js",
+    "static/css/4.591c1e9b.chunk.css.map": "/emissions-uk/static/css/4.591c1e9b.chunk.css.map",
+    "static/css/main.f4d50392.chunk.css.map": "/emissions-uk/static/css/main.f4d50392.chunk.css.map"
   }
 }
