@@ -9,7 +9,7 @@ const CityCard = ({city, onClick}) => {
     return [
         <button
             className='city-card-cross'
-            onClick={() => { console.log(city.city); onClick(city.city)} }
+            onClick={() => {onClick(city.city)} }
         >
             <FontAwesomeIcon icon={faTimes} />
         </button>,

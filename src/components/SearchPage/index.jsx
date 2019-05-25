@@ -18,7 +18,8 @@ const SearchPage = ({cities, fetchCityCallback, cityList, notification, onClick}
 
     const onChange = async (event, selected) => {
         if (!selected.value) return;
-        await fetchCityCallback(selected.value)
+        event.target.blur();
+        await fetchCityCallback(selected.value);
     }
 
     return (
@@ -47,9 +48,9 @@ const SearchPage = ({cities, fetchCityCallback, cityList, notification, onClick}
                 {cityList && cityList.results.map((city, i) => {
                     return (
                         <Suspense 
+                            key={i} 
                             fallback={
                             <div 
-                                key={i} 
                                 className='city-card-loading'>
                                 Loading...
                             </div>
