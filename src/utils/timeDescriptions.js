@@ -15,7 +15,6 @@ function timeDescription (time) {
     try {
         const details = moment.duration(moment().diff(time));
         const data = details['_data']
-        console.log(data);
         if (data.years) {
             return `Updated ${data.years} years ago`;
         }

@@ -9,7 +9,7 @@ https://react.semantic-ui.com/modules/dropdown
 }
 
 .dropdown .visible.menu.transition .item {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     padding: 1rem;
     color: rgb(21, 21, 21);
 }
@@ -31,7 +31,7 @@ div.text{
     line-height: 5rem;
     width: 100%;
     height: 100%;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #E0E0E0;
 }
 
@@ -39,7 +39,7 @@ div.text{
     display: inline-block;
     height: 100%;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .dropdown .icon {
@@ -98,5 +98,22 @@ div.text{
 @media(max-width: 991px) {
     .city-card__list {
         margin-top: 12rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .search-page .search-page-title {
+        font-size: 3rem;
+        margin: 2.8rem 0 2.3rem;
+    }
+    
+    .search-page-description {
+        font-size: 2rem;
+        line-height: 3.8rem;
+        margin-bottom: 3.8rem;
+    }
+    
+    .city-card-container {
+        margin: 1.8rem;
     }
 }

@@ -1,6 +1,6 @@
 .city-card-item {
     margin: 0.5rem 0;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .city-card-cross {
@@ -20,7 +20,7 @@
 
 .city-card-location-title {
     color: rgb(132, 0, 183);
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .city-card-location-city {
@@ -29,6 +29,15 @@
 
 .city-card-measurements {
     color: rgb(33, 33, 33);
-    font-size: 1.6rem;
     font-weight: bold;
+}
+
+@media(max-width: 768px) {
+    .city-card-item {
+        margin: 0.3rem 0;
+        font-size: 1.6rem;
+    }
+    .city-card-location-title {
+        font-size: 2rem;
+    }
 }
