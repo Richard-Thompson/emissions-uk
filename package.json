@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://yourusername.github.io/repository-name",
+  "homepage": "https://richard-thompson.github.io/emissions-uk",
   "eslintConfig": {
     "extends": "react-app"
   },
