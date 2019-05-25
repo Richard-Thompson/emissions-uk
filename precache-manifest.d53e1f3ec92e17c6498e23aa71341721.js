@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "520d924620e2f3fe8889d1d8732fcc2d",
+    "revision": "81d8fc91aab18b565131c79c621dc414",
     "url": "/emissions-uk/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/emissions-uk/static/css/4.591c1e9b.chunk.css"
   },
   {
-    "revision": "3cf0d2000653b822e848",
+    "revision": "5ffcbf751d300eaefeb0",
     "url": "/emissions-uk/static/css/main.f4d50392.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/emissions-uk/static/js/4.e9d7f846.chunk.js"
   },
   {
-    "revision": "3cf0d2000653b822e848",
-    "url": "/emissions-uk/static/js/main.bb285106.chunk.js"
+    "revision": "5ffcbf751d300eaefeb0",
+    "url": "/emissions-uk/static/js/main.32b6be55.chunk.js"
   },
   {
     "revision": "dc2b5f9aa7cc571ca5ed",
