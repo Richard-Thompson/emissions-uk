@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, Suspense, lazy} from 'react';
 import { Dropdown } from 'semantic-ui-react';
-import CityCard from '../CityCard';
+// import CityCard from '../CityCard';
 import './styles.css';
+const CityCard = lazy(() => import('../CityCard'));
 
 const SearchPage = ({cities, fetchCityCallback, cityList, notification, onClick}) => {
 
@@ -45,12 +46,21 @@ const SearchPage = ({cities, fetchCityCallback, cityList, notification, onClick}
             <div className='city-card-list'>
                 {cityList && cityList.results.map((city, i) => {
                     return (
-                        <div className='city-card-container' key={i}>
-                            <CityCard
-                                city={city}
-                                onClick={onClick}
-                            />
-                        </div>
+                        <Suspense 
+                            fallback={
+                            <div 
+                                key={i} 
+                                className='city-card-loading'>
+                                Loading...
+                            </div>
+                            }>
+                            <div className='city-card-container'>
+                                <CityCard
+                                    city={city}
+                                    onClick={onClick}
+                                />
+                            </div>
+                        </Suspense>
                     )
                 })}
             </div>

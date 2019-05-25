@@ -95,6 +95,11 @@ div.text{
     position: relative;
 }
 
+.city-card-loading {
+    color:rgb(243, 243, 243);
+    font-size: 2.2rem;
+}
+
 @media(max-width: 991px) {
     .city-card__list {
         margin-top: 12rem;
