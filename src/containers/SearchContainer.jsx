@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import hideVirtualKeyboard from 'hide-virtual-keyboard'
 import api from '../api/client.js';
 import SearchPage from '../components/SearchPage';
 
@@ -24,6 +25,7 @@ const SearchContainer = () => {
             return city.city !== cityName;
         })
        setCityList({results: [...removedItemList]})
+       hideVirtualKeyboard();
     }
 
     return (
