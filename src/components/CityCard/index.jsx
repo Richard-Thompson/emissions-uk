@@ -1,11 +1,14 @@
 import React from 'react';
-import lastUpdated from '../../utils/timeDescriptions';
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import lastUpdated from '../../utils/timeDescriptions';
 import'./styles.css';
 
 
-const CityCard = ({city, onClick}) => {
+const CityCard = (props) => {
+
+    const {city, onClick} = props;
+    
     return [
         <button
             className='city-card-cross'
@@ -25,7 +28,7 @@ const CityCard = ({city, onClick}) => {
         <p className='city-card-measurements city-card-item'> 
             Values: {city.measurements.map((measurement, i) => {
                 return(
-                    `${measurement.parameter}: ${measurement.value}${city.measurements.length -1 === i ? '' : ','} `
+                    `${measurement.parameter}: ${measurement.value}${city.measurements.length -1 === i ? '' : ', '} `
                 )
             })}
         </p>

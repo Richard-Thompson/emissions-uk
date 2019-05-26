@@ -1,14 +1,19 @@
 import moment from 'moment';
 
 export default function(measurements) {
-    const latestDatesList = measurements.map((measurement) => {
-        return moment(measurement.lastUpdated);
-    })
+    try {
+        const latestDatesList = measurements.map((measurement) => {
+            return moment(measurement.lastUpdated);
+        })
+    
+        const latestMoment = moment.max(latestDatesList)
+    
+          return timeDescription(latestMoment);
 
-    const latestMoment = moment.max(latestDatesList)
-
-      return timeDescription(latestMoment);
-
+    }
+    catch (e) {
+        return null;
+    }
 };
 
 function timeDescription (time) {

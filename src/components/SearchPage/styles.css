@@ -1,8 +1,8 @@
 /* Overriders for semantic ui react dropdown 
 https://react.semantic-ui.com/modules/dropdown
 */
-.visible.menu.transition {
-    max-height: 16rem;
+.ui.search.dropdown .menu {
+    max-height: 14rem;
     width: 100%;
     border-radius: 1rem;
     top: 4rem;
@@ -100,13 +100,13 @@ div.text{
     font-size: 2.2rem;
 }
 
-@media(max-width: 991px) {
+@media(max-width: 99.1rem) {
     .city-card__list {
         margin-top: 12rem;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 76.8rem) {
     .search-page .search-page-title {
         font-size: 3rem;
         margin: 2.8rem 0 2.3rem;
@@ -120,5 +120,46 @@ div.text{
     
     .city-card-container {
         margin: 1.8rem;
+    }
+
+    .dropdown .visible.menu.transition .item {
+        font-size: 1.6rem;
+    }
+
+    div.text{
+        line-height: 5rem;
+        font-size: 1.6rem;
+    }
+
+    .ui.search.dropdown>input.search {
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 41.4rem) {
+    .search-page .search-page-title {
+        font-size: 2.8rem;
+    }
+    
+    .search-page-description {
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        margin-bottom: 3.6rem;
+    }
+    
+    .city-card-container {
+        margin: 1rem 0;
+    }
+
+    .dropdown .visible.menu.transition .item {
+        font-size: 1.4rem;
+    }
+
+    div.text{
+        font-size: 1.4rem;
+    }
+
+    .ui.search.dropdown>input.search {
+        font-size: 1.4rem;
     }
 }

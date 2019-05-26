@@ -37,7 +37,18 @@
         margin: 0.3rem 0;
         font-size: 1.6rem;
     }
+
     .city-card-location-title {
         font-size: 2rem;
+    }
+}
+
+@media(max-width: 41.4rem) {
+    .city-card-item {
+        font-size: 1.4rem;
+    }
+
+    .city-card-location-title {
+        font-size: 1.8rem;
     }
 }

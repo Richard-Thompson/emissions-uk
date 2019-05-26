@@ -4,7 +4,8 @@ import { Dropdown } from 'semantic-ui-react';
 import './styles.css';
 const CityCard = lazy(() => import('../CityCard'));
 
-const SearchPage = ({cities, fetchCityCallback, cityList, notification, onClick}) => {
+const SearchPage = (props) => {
+const {cities, fetchCityCallback, cityList, notification, onClick} = props;
 
     const [options,setOptions] = useState({});
 
@@ -18,7 +19,6 @@ const SearchPage = ({cities, fetchCityCallback, cityList, notification, onClick}
 
     const onChange = async (event, selected) => {
         if (!selected.value) return;
-        event.target.blur();
         await fetchCityCallback(selected.value);
         document.activeElement.blur();
         
@@ -46,27 +46,26 @@ const SearchPage = ({cities, fetchCityCallback, cityList, notification, onClick}
                     onChange={onChange}
                 />
             </div>
-            <div className='city-card-list'>
-                {cityList && cityList.results.map((city, i) => {
-                    return (
-                        <Suspense 
-                            key={i} 
-                            fallback={
-                            <div 
-                                className='city-card-loading'>
-                                Loading...
-                            </div>
-                            }>
-                            <div className='city-card-container'>
-                                <CityCard
-                                    city={city}
-                                    onClick={onClick}
-                                />
-                            </div>
-                        </Suspense>
-                    )
-                })}
-            </div>
+            <Suspense 
+            fallback={
+                <div 
+                className='city-card-loading'>
+                    Loading...
+                </div>
+                }>
+                <div className='city-card-list'>
+                    {cityList && cityList.results.map((city, i) => {
+                        return (
+                                <div className='city-card-container' key={i}> 
+                                    <CityCard
+                                        city={city}
+                                        onClick={onClick}
+                                    />
+                                </div>
+                        )
+                    })}
+                </div>
+            </Suspense>
         </div>
     )
 }
