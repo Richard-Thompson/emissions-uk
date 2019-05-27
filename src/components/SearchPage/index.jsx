@@ -4,14 +4,14 @@ import './styles.css';
 const CityCard = lazy(() => import('../CityCard'));
 
 const SearchPage = (props) => {
-const {cities, fetchCityCallback, cityList, notification, onClick} = props;
+const {cities, fetchCityCallback, cityList, onClick} = props;
 
     const [options,setOptions] = useState({});
-    const [dropdownValue, setDropdownValue] = useState({});
+    const [dropdownValue, setDropdownValue] = useState('');
 
     useEffect(()=> {
-        const dropdownOptions = cities && cities.map((item)=> {
-            return {key: item.city, value: item.city, text: item.city}
+        const dropdownOptions = cities && cities.map((item, i)=> {
+            return {key: i, value: item.city, text: item.city}
         });
 
         setOptions({dropdownOptions});
@@ -24,7 +24,7 @@ const {cities, fetchCityCallback, cityList, notification, onClick} = props;
         // Reset the dropdown selected value to default 
         //allows user to reselect same city after removing
         //it from the list.
-        setDropdownValue({value: ''})
+        setDropdownValue('')
 
         //This is to blur the active element
         // allowing the mobile virtual keyboard
@@ -57,21 +57,21 @@ const {cities, fetchCityCallback, cityList, notification, onClick} = props;
                 />
             </div>
             <Suspense 
-            fallback={
-                <div 
-                className='city-card-loading'>
-                    Loading...
-                </div>
-                }>
+                fallback={
+                    <div className='city-card-loading'>
+                        Loading...
+                    </div>
+                }
+            >
                 <div className='city-card-list'>
-                    {cityList && cityList.results.map((city, i) => {
+                    {cityList && cityList.results.map((city) => {
                         return (
-                                <div className='city-card-container' key={i}> 
-                                    <CityCard
-                                        city={city}
-                                        onClick={onClick}
-                                    />
-                                </div>
+                            <div className='city-card-container' key={Math.random()}> 
+                                <CityCard
+                                    city={city}
+                                    onClick={onClick}                           
+                                />
+                            </div>
                         )
                     })}
                 </div>

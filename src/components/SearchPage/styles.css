@@ -95,6 +95,8 @@ div.text{
 
 .city-card-loading {
     color:rgb(243, 243, 243);
+    text-align: center;
+    margin-top: 6rem;
     font-size: var(--large-text-2x);
 }
 
