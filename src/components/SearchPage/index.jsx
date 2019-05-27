@@ -1,6 +1,5 @@
 import React, {useEffect, useState, Suspense, lazy} from 'react';
 import { Dropdown } from 'semantic-ui-react';
-// import CityCard from '../CityCard';
 import './styles.css';
 const CityCard = lazy(() => import('../CityCard'));
 
@@ -8,6 +7,7 @@ const SearchPage = (props) => {
 const {cities, fetchCityCallback, cityList, notification, onClick} = props;
 
     const [options,setOptions] = useState({});
+    const [dropdownValue, setDropdownValue] = useState({});
 
     useEffect(()=> {
         const dropdownOptions = cities && cities.map((item)=> {
@@ -20,6 +20,15 @@ const {cities, fetchCityCallback, cityList, notification, onClick} = props;
     const onChange = async (event, selected) => {
         if (!selected.value) return;
         await fetchCityCallback(selected.value);
+
+        // Reset the dropdown selected value to default 
+        //allows user to reselect same city after removing
+        //it from the list.
+        setDropdownValue({value: ''})
+
+        //This is to blur the active element
+        // allowing the mobile virtual keyboard
+        //to close. Better UX.
         document.activeElement.blur();
         
     }
@@ -44,6 +53,7 @@ const {cities, fetchCityCallback, cityList, notification, onClick} = props;
                     upward={false}
                     options={options.dropdownOptions}
                     onChange={onChange}
+                    value={dropdownValue}
                 />
             </div>
             <Suspense 

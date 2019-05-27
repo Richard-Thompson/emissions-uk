@@ -1,5 +1,7 @@
 import cssVars from 'css-vars-ponyfill';
 
+// This is to support css variables / custom properties in IE 
+// and legacy browsers.
 cssVars({
     // Targets
     rootElement   : document,
