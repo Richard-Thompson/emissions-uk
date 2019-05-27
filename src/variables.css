@@ -1,3 +1,17 @@
+:root { 
+    --title-large: 3.2rem;
+    --title-medium: 3rem;
+
+    --large-text-2x: 2.2rem;
+    --large-text-1x: 2rem;
+    --large-text: 1.8rem;
+    --medium-text: 1.6rem;
+    --small-text: 1.4rem;
+
+    --text-color-dark: rgb(21, 21, 21);
+    --text-color-light: rgb(243, 243, 243);
+}
+
 .container {
     max-width: 88rem;
     width: 100%;
@@ -5,6 +19,7 @@
     padding: 3rem 0;
     min-height: 100%; 
 }
+
 
 @media(max-width: 76.8rem) {
     .container {

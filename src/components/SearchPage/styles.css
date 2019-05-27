@@ -9,7 +9,7 @@ https://react.semantic-ui.com/modules/dropdown
 }
 
 .dropdown .visible.menu.transition .item {
-    font-size: 1.8rem;
+    font-size: var(--large-text);
     padding: 1rem;
     color: rgb(21, 21, 21);
 }
@@ -31,7 +31,7 @@ div.text{
     line-height: 5rem;
     width: 100%;
     height: 100%;
-    font-size: 1.8rem;
+    font-size: var(--large-text);
     color: #E0E0E0;
 }
 
@@ -39,7 +39,7 @@ div.text{
     display: inline-block;
     height: 100%;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: var(--large-text);
 }
 
 .dropdown .icon {
@@ -54,16 +54,16 @@ div.text{
 
 .search-page .search-page-title {
     text-align: center;
-    color: rgb(243, 243, 243);
-    font-size: 3.2rem;
+    color: var(--text-color-light);
+    font-size: var(--title-large);
     margin: 3rem 0 2.5rem;
 }
 
 .search-page-description {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: var(--large-text-2x);
     line-height: 4rem;
-    color: rgb(243, 243, 243);
+    color: var(--text-color-light);
     margin-bottom: 4rem;
 }
 
@@ -89,15 +89,13 @@ div.text{
     background-color: rgb(255, 255, 255);
     border-radius: 1rem;
     padding: 3rem;
-    color: rgb(21, 21, 21);
-    font-size: 1.4rem;
     margin: 2rem;
     position: relative;
 }
 
 .city-card-loading {
     color:rgb(243, 243, 243);
-    font-size: 2.2rem;
+    font-size: var(--large-text-2x);
 }
 
 @media(max-width: 99.1rem) {
@@ -108,12 +106,12 @@ div.text{
 
 @media(max-width: 76.8rem) {
     .search-page .search-page-title {
-        font-size: 3rem;
+        font-size: var(--title-medium);
         margin: 2.8rem 0 2.3rem;
     }
     
     .search-page-description {
-        font-size: 2rem;
+        font-size:var(--large-text-1x);
         line-height: 3.8rem;
         margin-bottom: 3.8rem;
     }
@@ -123,26 +121,22 @@ div.text{
     }
 
     .dropdown .visible.menu.transition .item {
-        font-size: 1.6rem;
+        font-size: var(--medium-text);
     }
 
     div.text{
         line-height: 5rem;
-        font-size: 1.6rem;
+        font-size: var(--medium-text);
     }
 
     .ui.search.dropdown>input.search {
-        font-size: 1.6rem;
+        font-size: var(--medium-text);
     }
 }
 
 @media(max-width: 41.4rem) {
-    .search-page .search-page-title {
-        font-size: 2.8rem;
-    }
-    
     .search-page-description {
-        font-size: 1.8rem;
+        font-size: var(--large-text);
         line-height: 3.6rem;
         margin-bottom: 3.6rem;
     }
@@ -152,14 +146,14 @@ div.text{
     }
 
     .dropdown .visible.menu.transition .item {
-        font-size: 1.4rem;
+        font-size: var(--small-text);
     }
 
     div.text{
-        font-size: 1.4rem;
+        font-size: var(--small-text);
     }
 
     .ui.search.dropdown>input.search {
-        font-size: 1.4rem;
+        font-size: var(--small-text);
     }
 }

@@ -1,6 +1,6 @@
 .city-card-item {
     margin: 0.5rem 0;
-    font-size: 1.8rem;
+    font-size: var(--large-text);
 }
 
 .city-card-cross {
@@ -15,40 +15,40 @@
 
 .city-card-updated {
     text-transform: uppercase;
-    color: rgb(21, 21, 21);
+    color: var(--text-color-dark);
 }
 
 .city-card-location-title {
     color: rgb(132, 0, 183);
-    font-size: 2.2rem;
+    font-size: var(--large-text-2x);
 }
 
 .city-card-location-city {
-    color: rgb(21, 21, 21);
+    color: var(--text-color-dark);
 }
 
 .city-card-measurements {
     color: rgb(33, 33, 33);
-    font-weight: bold;
+    font-weight: 700;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 76.8rem) {
     .city-card-item {
         margin: 0.3rem 0;
-        font-size: 1.6rem;
+        font-size: var(--medium-text);
     }
 
     .city-card-location-title {
-        font-size: 2rem;
+        font-size: var(--large-text-1x);
     }
 }
 
 @media(max-width: 41.4rem) {
     .city-card-item {
-        font-size: 1.4rem;
+        font-size: var(--small-text);
     }
 
     .city-card-location-title {
-        font-size: 1.8rem;
+        font-size: var(--large-text);
     }
 }

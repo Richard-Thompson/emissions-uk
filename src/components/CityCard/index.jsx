@@ -8,7 +8,7 @@ import'./styles.css';
 const CityCard = (props) => {
 
     const {city, onClick} = props;
-    
+
     return [
         <button
             className='city-card-cross'
@@ -26,11 +26,13 @@ const CityCard = (props) => {
             In {city.city}, United Kingdom
         </p>,
         <p className='city-card-measurements city-card-item'> 
-            Values: {city.measurements.map((measurement, i) => {
-                return(
-                    `${measurement.parameter}: ${measurement.value}${city.measurements.length -1 === i ? '' : ', '} `
-                )
-            })}
+           <b>
+                Values: {city.measurements.map((measurement, i) => {
+                    return(
+                        `${measurement.parameter}: ${measurement.value}${city.measurements.length -1 === i ? '' : ', '} `
+                    )
+                })}
+            </b>
         </p>
     ]
 }
