@@ -12,7 +12,7 @@ const CityCard = (props) => {
     return [
         <button
             className='city-card-cross'
-            onClick={() => {onClick(city.city)} }
+            onClick={() => onClick(city.city) }
             key='button'
         >
             <FontAwesomeIcon icon={faTimes} />
